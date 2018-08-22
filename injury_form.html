@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Add an Injury</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="wrapper">
+            <fieldset>
+                <legend> Injury Information </legend>
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="type" value="add_an_injury" />
+                        <label>Kind of Injury:</label>
+                            <textarea name="kindOfInjury" placeholder="Enter Kind of Injury" required="required"></textarea>
+                        <label>Muscle:</label>
+                            <input type="text" name="muscle" placeholder="Enter which muscle was hurted" required="required"/>
+                        <label>Side:</label>
+                            <textarea name="side" placeholder="Enter Side" required="required"></textarea>
+                        <label>Out of Training:</label>
+                            <input type="number" name="outOfTraining" placeholder="Enter how many days" required="required" />
+                        <label>Date:</label>
+                            <input type="date" name="date" required="required" />
+                            <input type="submit" name="submit" value="Submit" />
+                    </form>
+            </fieldset>
+            <a id="back_to_home" href="home_page.html">Back to the home page</a>
+        </div>
+        <footer>
+            <p>Contact information: <a href="mailto:maksim.medveckis@gmail.com">maksim.medveckis@gmail.com</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Add an Athlete</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="wrapper">
+            <fieldset>
+                <legend> Athlete Information </legend>
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="type" value="add_athlete" />
+                        <label>First Name:</label>
+                            <input type="text" name="first_name" placeholder="Enter First Name" required="required"/>
+                        <label>Last Name:</label>
+                            <input type="text" name="last_name" placeholder="Enter Last Name" required="required"/>
+                        <label>Age:</label>
+                            <input type="number" name="age" placeholder="Enter Age" required="required" />
+                        <label>Email:</label>
+                            <input type="email" name="email" placeholder="Enter Email Address" required="required" />
+                        <label>Image:</label>
+                            <input type="file" name="file" required="required" />
+                            <input type="submit" name="submit" value="Submit" />
+                    </form>
+            </fieldset>
+            <a id="back_to_home" href="home_page.html">Back to the home page</a>
+        </div>
+        <footer>
+            <p>Contact information: <a href="mailto:maksim.medveckis@gmail.com">maksim.medveckis@gmail.com</a></p>
+        </footer>
+    </body>
+</html>
